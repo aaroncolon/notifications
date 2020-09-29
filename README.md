@@ -1,4 +1,4 @@
-# notifications
+# Notifications
 
 Simple notifications modules.
 
@@ -26,7 +26,7 @@ npm run build-dev
 
 ## Running
 
-open dis/index.html in a browser
+open dist/index.html in a browser
 
 ## Credits
 

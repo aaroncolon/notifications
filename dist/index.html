@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Notifications</title>
+  <meta charset="utf-8">
+  <link type="text/css" href="./notifications.css" />
+</head>
+<body>
+  <h1>Welcome to Notifications!</h1>
+  <p>To get started, open the console and create an instance of the <code>Notifications</code> class.</p>
+
+  <pre><code>const myNotif = new Notifications();</code></pre>
+
+  <p>Optionally configure with options:</p>
+
+  <pre><code>
+const myNotif = new Notifications({
+  classRemoving : 'notification--removing',
+  classVisible  : 'notification--visible',
+  delayFadeIn   : 2000,
+  delayFadeOut  : 1000,
+  id            : 'notification-container'
+});
+  </code></pre>
+
+  <p>Once instantiated, create a notification using the <code>render()</code> method</p>
+
+  <pre><code>myNotif.render('My notification text!');</code></pre>
+
+  <div id="notification-container" class="notification-container"></div>
+
+  <script src="notifications.bundle.js"></script>
+  <!-- <script src="notificationsRmp.bundle.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,32 @@
+.notification-container {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  overflow-y: visible;
+  vertical-align: middle;
+  width: auto;
+}
+
+.notification {
+  background-color: #eeeeee;
+  color: #000000;
+  font-size: 14px;
+  line-height: 40px;
+  margin: 0;
+  opacity: 0;
+  padding: 0 14px;
+  transition: opacity 1s ease;
+  text-transform: capitalize;
+
+  &--visible {
+    opacity: 1;
+  }
+
+  &--removing {
+    opacity: 0;
+  }
+
+  & + .notification {
+    margin-top: 5px;
+  }
+}
